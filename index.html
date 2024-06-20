@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <!--  HEAD  -->
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>AgenceCo</title>
+        <link href="style.css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    </head>
+
+    <!--  BODY  -->
+    <body>
+        
+        <div class="menuMobile">
+            <span class="material-icons" onclick="toggler()" id="toggler">menu</span>
+            <a href="index.html" class="agencecoMobile">Agence<em>co</em></a>
+        </div>
+        <div class="menu">
+            <div class="menu-container">
+                <a href="index.html" class="agenceco">Agence<em>co</em></a>
+                <ul class="menuList">
+                    <li><a href="#accueil">Accueil</a></li>
+                    <li><a href="#equipe">Notre equipe</a></li>
+                    <li><a href="#services">Nos services</a></li>
+                    <li><a href="#temoignages">Temoignages</a></li>
+                    <li><a href="#contact">Contactez-nous</a></li>
+                    <li><a href="#galerie">Notre galerie</a></li>
+                </ul>
+            </div>
+        </div>
+        <script>
+      
+            function toggler() {
+                const icon = document.querySelector('#toggler');
+                const menu = document.querySelector('.menu');
+                if(icon.innerHTML == "menu"){
+                    icon.innerHTML = "menu_open";
+                    menu.style.transform ="translateX(0%)";
+                }
+                else{
+                    icon.innerHTML = "menu"
+                    menu.style.transform ="translateX(-100%)";
+                }
+            }
+      
+        </script>
+        
+        <!-- Accueil -->
+        <section class="accueil" id="accueil">
+            <div class="lien360">
+                <img src="images/wallpaper.jpg" alt="banner" class="img-banner">
+                <div class="rowAccueil">
+                    <div class="titreSite">
+                        <h1>Bienvenue dans votre <br>
+                            <a href="#accueil">agence web ecologique</a>
+                        </h1>
+                       
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- equipe -->
+        <section id="equipe">
+            <div class="container txtCenter">
+                <h2 class="style-title">Notre equipe</h2>
+                <p class="bold">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Egestas egestas fringilla phasellus faucibus. Elementum sagittis vitae et leo duis ut diam quam.
+                </p>
+                <div class="row mt50">
+                    <div class="col33">
+                        <img class="teamPP" src="images/equipe/julie-dupond.jpg" alt="Portrait de Julie Dupond">
+                        <p class="teamName">Julie Dupond</p>
+                        <p>Diam quam nulla<br>Porttitor massa id<br>Dui ut ornare</p>
+                    </div>
+                    <div class="col33">
+                        <img class="teamPP" src="images/equipe/Romeo-Sylla.jpg" alt="Portrait de Romeo Sylla">
+                        <p class="teamName">Romeo Sylla</p>
+                        <p>Eu volutpat<br>Odio facilisis mauris<br>Sit amet</p>
+                    </div>                
+                    <div class="col33">
+                        <img class="teamPP" src="images/equipe/Javier-Bardem.jpg" alt="Portrait de Javier Bardem">
+                        <p class="teamName">Javier Bardem</p>         
+                        <p>Pharetra diam sit<br>Amet nisl suscipit<br>Id aliquet lectus</p>
+                    </div>
+                </div>               
+            </div>
+            
+            
+        </section>
+
+        <!-- temoignages -->
+        <div class="bgDark" id="temoignages">
+            <div class="container txtCenter">
+                <div class="row mt50">
+                    <div class="col25">
+                        <p class="nbClient">2500</p>
+                        <p class="txtClient">Clients satisfaits</p>
+                    </div>
+                    <div class="col25">
+                        <p class="nbClient">2500</p>
+                        <p class="txtClient">Clients satisfaits</p>
+                    </div>
+                    <div class="col25 nbClientOff">
+                        <p class="nbClient">2500</p>
+                        <p class="txtClient">Clients satisfaits</p>
+                    </div>
+                    <div class="col25 nbClientOff">
+                        <p class="nbClient">2500</p>
+                        <p class="txtClient">Clients satisfaits</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- services -->
+        <section class="services" id="services">
+            <div class="container txtCenter">
+                <h2 class="style-title">Nos services</h2>
+                <div class="row mt50">
+                    <div class="col50">
+                        <div>
+                            <img class="imgServ" src="images/Services/Vector.jpg" alt="Logo de vecteur">
+                        </div>
+                        <p>Création de sites web</p>
+                    </div>
+                    <div class="col50">
+                        <div>
+                            <img class="imgServ" src="images/Services/audit.jpg" alt="Logo de services">
+                        </div>
+                        <p>Audit qualité</p>
+                    </div>
+                </div>
+            </div>
+            
+            
+        </section>
+
+        <!-- contact -->
+        <section class="contact" id="contact">
+            <div class="container txtCenter pb30">
+                <div class="pt30"><h2 class="style-title">Contactez-nous</h2></div>
+                <p class="bold">
+                    Nec ullamcorper sit amet risus nullam eget felis. Cum sociis natoque penatibus et magnis dis parturient.
+                </p>
+                <form method="get" action="#">
+                    <div class="row mt50">
+                        <div class="col50 txtLeft">
+                            <div class="pb30"><input type="text" name="nom" placeholder="Nom" required></div>
+                            <div  class="pb30"><input type="tel" name="telephone" placeholder="Telephone"></div>
+                        </div>
+                        <div class="col50 txtRight">
+                            <div class="pb30"><input type="text" name="categorie" placeholder="Categorie" required></div>
+                            <div class="pb30"><input type="text" name="ville" placeholder="Ville"></div>
+                        </div>
+                        <div class="col100">
+                            <div class="pb30"><input class="form100" type="email" name="email" placeholder="Email" required></div>
+                            <div class="pb30"><textarea class="form100" name="message" placeholder="Message" rows="10"></textarea></div>
+                        </div>
+                    </div>
+                    <div class="txtRight pb30"><input class="send" type="submit" value="Envoyer"></div>
+                </form>
+            </div>               
+        </section>
+        
+        <!-- a propos -->
+        <section class="aPropos mt80">
+            <div class="container txtCenter">
+                <div class="row rowPropos">
+                    <div class="col45 colG">
+                        <img src="images/Propos/equipe.jpg" alt="Réunion de l'équipe">
+                    </div>
+                    <div class="col45 colD">
+                        <div class="containerSmall txtCenter">
+                            <h2 class="style-title">A propos de nous</h2>
+                            <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque dolorum saepe cumque molestiae nisi eveniet aut quis.</p>
+                            <div class="row2">
+                                <div class="col33">
+                                    <img class="lgEco" src="images/Propos/ecologie.jpg" alt="Symbole écologie">
+                                    <p>Ecologie</p>
+                                </div>
+                                <div class="col33">
+                                    <img class="lgResp" src="images/Propos/responsable.jpg" alt="Symbole responsable">
+                                    <p>Responsable</p>
+                                </div>
+                                <div class="col33">
+                                    <img class="lgAssist" src="images/Propos/assistance.jpg" alt="Symbole assistance">
+                                    <p>24/7 Assistance</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- galerie -->
+        <section class="galerie mt80" id="galerie">
+            <div class="container txtCenter">
+                <h2 class="style-title">Notre Galerie</h2>
+                <p class="bold">
+                    Arcu non sodales neque sodales ut etiam sit amet nisl. Mi in nulla posuere sollicitudin aliquam ultrices sagittis. Non quam lacus suspendisse faucibus interdum posuere lorem ipsum dolor. Consequat mauris nunc congue nisi vitae.
+                </p>
+                <div class="row">
+                    <div class="col100">
+                        <img src="images/carrousel/photo1.jpg" alt="Première photo de notre Galerie">       
+                        <div class="boutons">
+                            <input type="button" value="&#60;">
+                            <input type="button" value="&#62;">
+                        </div>            
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- bas de page -->
+        <section class="piedPage mt50 bgDark" id="piedPage">
+            <div class="container txtCenter">
+                <div class="row" style="align-items: center;">
+                    <div class="col20">
+                        <h3>Content</h3>
+                        <p>Consectur<br>adipiscing</p>
+                    </div>
+                    <div class="col20">
+                        <h3>Content</h3>
+                        <p>Consectur<br>adipiscing</p>
+                    </div>
+                    <div class="col20">
+                        <h3>Services</h3>
+                        <p>Consectur<br>adipiscing</p>
+                    </div>
+                    <div class="col20">
+                        <h3>Aide</h3>
+                        <p>Consectur<br>adipiscing</p>
+                    </div>
+                    <div class="col20">
+                        <div class="row" style="align-items: center;">
+                            <div class="colLogo">
+                                <p><img class="logoPP" src="images/logo/tel.png" alt="Logo telephone"></p>
+                                <p><img class="logoPP" src="images/logo/position.png" alt="Logo adresse"></p>
+                            </div>
+                            <div class="colInfos">
+                                <p class="infos">+33 0 00 00 00 00<br>+33 0 00 00 00 00</p>
+                                <p class="infos">75001 Paris<br>France</p>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--  footer  -->
+        <footer id="footer">
+            <div class="basPage">
+                <p>Copyright &#169; 2021 AGENCECO - All rights reserved</p>
+                <nav class="navFooter">
+                    <a href="https://www.facebook.com/profile.php?id=100086739696483" target="_blank">
+                        <img src="images/logo/facebook.svg" alt="Logo Facebook">
+                    </a>
+                    <a href="https://twitter.com/gducampus" target="_blank">
+                        <img src="images/logo/twitter.svg" alt="Logo Twitter">
+                    </a>
+                    <a href="https://www.instagram.com/gducampus/" target="_blank">
+                        <img src="images/logo/instagram.svg" alt="Logo Instagram">
+                    </a>
+                </nav>
+            </div>
+        </footer>
+    </body>
+</html>

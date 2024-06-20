@@ -1,0 +1,710 @@
+body, input, textarea {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+}
+h1 {
+  color: #029d5b;
+  font-size: 30px;
+  font-weight: 600;
+}
+/* ---------- class pré-définies ---------- */
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+.row {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.row2 {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.bold {
+  font-weight: 600;
+}
+.bgDark {
+  background-color: #053b44;
+}
+.col100 {
+  width: 100%;
+}
+.col50 {
+  width: 50%;
+}
+.col45 {
+  width: 45%;
+}
+.col33 {
+  width: 33.33%;
+}
+.col25 {
+  width: 25%;
+}
+.col20 {
+  width: 20%;
+}
+.txtCenter {
+  text-align: center;
+}
+.txtLeft {
+  text-align: left;
+}
+.txtRight {
+  text-align: right;
+}
+.pt30 {
+  padding-top: 30px;
+}
+.pb30 {
+  padding-bottom: 30px;
+}
+.mt50 {
+  margin-top: 50px;
+}
+.mt80 {
+  margin-top: 80px;
+}
+
+.style-title{
+  color: #029d5b;
+  font-size: 40px;
+}
+
+
+/* ---------- header ---------- */
+.menu {
+  position: sticky;
+  background-color: white;
+  display: block;
+  top: 0;
+  width: 100%;
+  z-index: 3;
+  box-shadow: 1px 1px 25px rgba(0,0,0,0.2);
+}
+.menu {
+  text-align: center;
+}
+
+.menu-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-inline: auto;
+}
+
+.menuList {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+.menuList a {
+  text-decoration: none;
+  color: black;
+  padding: 10px 20px;
+  font-size: 20px;
+  font-weight: 600;
+}
+.menuList a:hover {
+  color: #029d5b;
+}
+
+.menuMobile {
+  width: 100%;
+  position: sticky;
+  top: 0;
+  height: 80px;
+  background: white;
+  z-index:10;
+  padding-inline: 20px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  box-shadow: 1px 1px 25px rgba(0,0,0,0.07);
+  display: none;
+}
+
+.agenceco, .agencecoMobile {
+  padding-left: 25px;
+  text-decoration: none;
+  color: #005905;
+  font-size: 25px;
+  font-weight: 800;
+}
+.agencecoMobile {
+  display: none;
+}
+
+/* ---------- main ---------- */
+/* --------------------------------------------------------------------------------------------- ACCUEIL */
+ .lien360{
+  color: white;
+  text-decoration: none;
+ }
+ .rowAccueil{
+  margin-top: -300px;
+  text-align: end;
+ }
+.titreSite {
+  padding-right: 150px;
+}
+.img-banner{
+  width: 100%;
+}
+h1{
+  color: white !important;
+  font-size:  60px;
+}
+h1 a{
+  color: #d5f31f;
+  font-size: 70px;
+  text-decoration: none;
+}
+/* ---------------------------------------------------------------------------------------------- EQUIPE */
+#equipe {
+  margin-top: 150px;
+}
+
+.teamPP {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.teamName {
+  font-size: 1.2em;
+  font-weight: 600;
+}
+/* ----------------------------------------------------------------------------------------- TEMOIGNAGES */
+.nbClient {
+  color:#d5f31f;
+  font-size: 2em;
+  font-weight: 600;
+  margin-top: 25px;
+  margin-bottom: 0;
+}
+.txtClient {
+  color:white;
+  font-weight: 500;
+  margin-top: 0;
+  margin-bottom: 25px;
+}
+
+/* -------------------------------------------------------------------------------------------- SERVICES */
+.services img {
+  width: 250px;
+  height: 230px;
+  padding: 75px;
+  background-color: #eeeeee;
+  border-radius: 5%;
+}
+.services p {
+  font-size: 1.4em;
+  font-weight: 600;
+  padding-bottom: 30px;
+}
+.services h1 {
+  padding-bottom: 50px;
+}
+/* --------------------------------------------------------------------------------------------- CONTACT */
+.contact {
+  background-color: #053b44;
+  color: white;
+}
+.contact h1 {
+  color:#d5f31f;
+}
+.contact p{
+  padding-bottom: 30px;
+}
+input, textarea{
+  box-sizing: border-box;
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid white;
+  width: 95%;
+}
+.form100 {
+  width: 100%;
+}
+textarea {
+  resize: none;
+}
+input::placeholder, textarea::placeholder {
+  font-weight: 200;
+  color: white; 
+}
+input:focus, textarea:focus {
+  outline: none;
+}
+input:focus::placeholder, textarea:focus::placeholder {
+  color: grey;
+}
+.send {
+  background-color: #d5f31f;
+  color: #053b44;
+  border: none;
+  border-radius: 25px;
+  width: 125px;
+  height: 40px;
+  font-weight: 600;
+}
+.send:active {
+  background: linear-gradient(#a6be14, #d5f31f 80%);
+}
+
+/* -------------------------------------------------------------------------------------------- A PROPOS */
+.rowPropos {
+  gap: 20px;
+}
+.containerSmall {
+  padding: 25px;
+}
+.containerSmall h1 {
+  color: black;
+}
+.description {
+  margin-bottom: 50px;
+}
+.colG img {
+  width: 100%;
+  height: 100%;
+  border-radius: 25px;
+}
+.colD {
+  border: 1px solid black;
+  box-sizing: border-box;
+  border-radius: 25px;
+}
+.lgEco {
+  border: 5px solid #053b45;
+  border-radius: 50%;
+  padding: 40px 36px 40px 37px;
+}
+.lgResp {
+  border: 5px solid #053b45;
+  border-radius: 50%;
+  padding: 40px 27px 40px 27px;
+}
+.lgAssist {
+  border: 5px solid #053b45;
+  border-radius: 50%;
+  padding: 40px 34px 40px 35px;
+}
+
+/* --------------------------------------------------------------------------------------------- GALERIE */
+.galerie img {
+  width: 100%;
+  border-radius: 25px;
+}
+.boutons {
+  display: flex;
+  justify-content: space-between;
+}
+.boutons input {
+  font-size: 1.2em;
+  width: 30px;
+  height: 30px;
+  border: 1px solid black;
+  border-radius: 50%;
+}
+.boutons input:active {
+  color: #d5f31f;
+  background-color: black;
+}
+/* ---------------------------------------------------------------------------------------- PIED DE PAGE */
+.piedPage {
+  color: white;
+}
+.piedPage {
+  font-weight: 300;
+}
+.logoPP {
+  width: 40px;
+  height: auto;
+}
+.piedPage h3 {
+  font-weight: 600;
+}
+.colLogo {
+  width: 20%;
+}
+.colInfo {
+  width: 80%;
+}
+/* ---------- footer ---------- */
+footer {
+  background-color: #0c2127;
+  color: white;
+}
+.basPage {
+  height: 5em;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 50px;
+}
+footer p {
+  margin: 0;
+}
+.basPage img {
+  width: 20px;
+  height: auto;
+  border: 1px solid white;
+  border-radius: 25%;
+  padding: 5px;
+}
+.navFooter {
+  gap: 25px;
+  padding-right: 50px;
+  font-weight: 600;
+
+  display: flex;
+  align-items: center;
+}
+
+
+/* -------------------------------------------------- */
+
+
+
+/* -------------------------------------------------------------------------------------------- */
+/* ---------- MEDIA QUERIES ---------- */
+/* -------------------------------------------------------------------------------------------- */
+@media screen and (max-width: 1400px) { 
+  /* ---------- class pré-définies ---------- */
+  .titreSite {
+    padding-right: 80px;
+  }
+  section {
+    padding-inline: 15px;
+  }
+  .col100 {
+    width: 100%;
+  }
+  .col50 {
+    width: 100%;
+  }
+  .col45 {
+    width: 100%;
+  }
+  .col33 {
+    width: 50%;
+  }
+  .col25 {
+    width: 50%;
+  }
+  .txtLeft {
+    text-align: center;
+  }
+  /* ---------- menu ---------- */
+  .menuList a {
+    font-size: 15px;
+  }
+  /* ---------- accueil ---------- */
+  .accueil {
+    padding: 0;
+  }
+  .titreSite {
+    font-size: 0.8em;
+    margin: 0px 60px 60px 0px;
+  }
+  h1{
+    font-size: 50px;
+  }
+  h1 a{
+    font-size: 60px;
+  }
+  /* ---------- contact ---------- */
+  #contact .txtRight {
+    text-align: center;
+  }
+  #contact .form100 {
+    width: 95%;
+  }
+  /* ---------- piedPage ---------- */
+  .piedPage {
+    font-size: smaller;
+  }
+  .logoPP {
+    width: 100%;
+    max-width: 35px;
+  }
+  /* ---------- footer ---------- */
+  .basPage {
+    font-size: 0.8em;
+  }
+}
+
+
+@media screen and (max-width: 1000px) { 
+  /* ---------- class pré-définies ---------- */
+  .titreSite {
+    padding-right: 0;
+  }
+  p {
+    font-size: 1.2em;
+  }
+  .col100 {
+    width: 100%;
+  }
+  .col50 {
+    width: 100%;
+  }
+  .col45 {
+    width: 100%;
+  }
+  .col33 {
+    width: 100%;
+  }
+  .col25 {
+    width: 100%;
+  }
+  /* ---------- menu ---------- */
+  .menuList a {
+    padding: 10px 10px;
+  }
+  /* ---------- accueil ---------- */
+  #accueil .rowAccueil {
+    text-align: center;
+    justify-content: center;
+  }
+  .titreSite {
+    font-size:0.7em;
+    margin: 0 0 50px 0;
+  }
+  h1{
+    font-size: 45px;
+  }
+  h1 a{
+    font-size: 55px;
+  }
+  /* ---------- temoignages ---------- */
+  #temoignages .nbClientOff {
+    display: none;
+  }
+  /* ---------- services ---------- */
+  #services .imgServ {
+    width: 200px;
+    height: auto;
+  }
+  /* ---------- piedPage ---------- */
+  .piedPage {
+    font-size:x-small;
+  }
+  .logoPP {
+    width: 100%;
+    max-width: 30px;
+  }
+  /* ---------- footer ---------- */
+  .basPage {
+    font-size: 0.6em;
+  }
+  #footer .basPage img {
+    width: 15px;
+    height: auto;
+    border: 1px solid white;
+    border-radius: 25%;
+    padding: 5px;
+  }
+}
+
+@media screen and (max-width: 800px) { 
+  /* ---------- class pré-définies ---------- */
+  
+  .col100 {
+    width: 100%;
+  }
+  .col50 {
+    width: 100%;
+  }
+  .col45 {
+    width: 100%;
+  }
+  .col33 {
+    width: 100%;
+  }
+  .col25 {
+    width: 100%;
+  }
+  .col20 {
+    width: 33%;
+  }
+  /* ---------- menu ---------- */
+  .agencecoMobile {
+    display: block;
+  }
+  .agenceco {
+    display: none;
+  }
+  /* ---------- accueil ---------- */
+  #accueil {
+    position: relative;
+    bottom: 373px;
+    margin-top: -25px !important;
+  }
+  h1{
+    font-size: 40px;
+  }
+  h1 a{
+    font-size: 50px;
+  }
+  /* ---------- equipe ---------- */
+  #equipe {
+    margin-top: -280px;
+  }
+  /* ---------- services ---------- */
+  #services .services img {
+    width: 50%;
+    height: auto;
+  }
+  #services .imgServ {
+    width: 160px;
+    height: auto;
+  }
+  /* ---------- footer ---------- */
+  .basPage {
+    font-size: 0.6em;
+  }
+  #footer .basPage img {
+    width: 20px;
+    height: auto;
+    border: none;
+    padding: 5px;
+  }
+
+  /* --------------------------------- */
+  /* ---------- menu burger ---------- */
+  /* --------------------------------- */
+  .menu {
+    position: sticky;
+    top: 80px;
+    width: 75%;
+    transform:translateX(-100%);
+    transition: .3s ease;
+    border-bottom-right-radius: 25px;
+    background-color: rgba(255,255,255,0.9);
+  }
+
+  .menuMobile {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .menu-container {
+    text-align: center;
+    width: 100%;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .menuList {
+    padding: 0;
+    flex-direction: column;
+  }
+
+  .menuList a{
+    box-sizing: border-box;
+    display: block;
+    font-size: 1.5rem;
+  }
+
+  .menuList a:active {
+    color: #029d5b;
+  }
+
+  .logo {
+    width: 80px;
+    margin-bottom: 20px;
+  }
+  /* --------------------------------- */
+  /* ---------- menu burger ---------- */
+  /* --------------------------------- */
+}
+
+@media screen and (max-width: 600px) { 
+  /* ---------- class pré-définies ---------- */
+  .col20 {
+      width: 50%;
+  }
+  /* ---------- accueil ---------- */  
+  h1{
+    font-size:  35px;
+  }
+  h1 a{
+    font-size: 45px;
+  }
+  /* ---------- services ---------- */
+  #services .imgServ {
+    width: 128px;
+    height: auto;
+  }
+  /* ---------- contact ---------- */
+  #contact input, textarea {
+      font-size: 1.2em;
+  }
+  /* ---------- piedPage ---------- */
+  #piedPage {
+    font-size: 0.8em;
+  }
+  /* ---------- footer ---------- */
+  #footer .navFooter {
+    gap: 15px;
+    padding-right: 25px;
+  }
+  #footer .basPage img {
+    width: 15px;
+    height: auto;
+  }
+  #footer .basPage {
+    font-size: 0.5em;
+    padding-left: 25px;
+  } 
+}
+
+@media screen and (max-width: 425px) { 
+  .col20 {
+    width: 100%;
+  }
+  /* ---------- accueil ---------- */  
+  .titreSite {
+    margin-top: 150px;
+    margin-bottom: 0;
+  }
+  h1{
+    font-size: 23px;
+  }
+  h1 a{
+    font-size: 28px;
+  }
+  /* ---------- services ---------- */
+  #services .imgServ {
+    width: 128px;
+    height: auto;
+  }
+  /* ---------- contact ---------- */
+  #contact input, textarea {
+      font-size: 1.2em;
+  }
+  /* ---------- piedPage ---------- */
+  #piedPage {
+    font-size: 0.8em;
+  }
+  /* ---------- footer ---------- */
+  #footer .navFooter {
+    gap: 15px;
+    padding-right: 25px;
+  }
+  #footer .basPage img {
+    width: 15px;
+    height: auto;
+  }
+  #footer .basPage {
+    font-size: 0.5em;
+    padding-left: 25px;
+  } 
+}
